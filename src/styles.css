@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #ece7f9;
+  padding: 10px;
+}
+
+.sidebar-button {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar-button:hover {
+  background-color: #5a00d1;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  background-color: #faf8fc;
+}
+
+.title {
+  font-size: 24px;
+  color: #6200ea;
+  margin-bottom: 20px;
+}
+
+.predefined-questions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.question-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.question-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.question-card h3 {
+  margin: 0;
+  color: #6200ea;
+  font-size: 18px;
+}
+
+.question-card p {
+  margin: 5px 0 0;
+  color: #888;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-input input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.ask-button,
+.save-button {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ask-button:hover,
+.save-button:hover {
+  background-color: #5a00d1;
+}
